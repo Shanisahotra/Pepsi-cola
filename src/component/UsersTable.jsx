@@ -6,6 +6,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Input } from "@/components/ui/input";
 
 export default function UsersTable() {
   const users = [
@@ -15,12 +16,19 @@ export default function UsersTable() {
 
   return (
     <div className="p-6">
+      <div className="w-full max-w-sm">
+      <Input type="text" placeholder="Search..." />
+    </div>
+    
       <Table>
         <TableHeader>
           <TableRow>
             <TableHead>ID</TableHead>
             <TableHead>Name</TableHead>
             <TableHead>Email</TableHead>
+             <TableHead>Phone</TableHead>
+              <TableHead>Address</TableHead>
+            <TableHead>Action</TableHead>
           </TableRow>
         </TableHeader>
 
@@ -29,6 +37,8 @@ export default function UsersTable() {
             <TableRow key={user.id}>
               <TableCell>{user.id}</TableCell>
               <TableCell>{user.name}</TableCell>
+              <TableCell>{user.email}</TableCell>
+               <TableCell>{user.name}</TableCell>
               <TableCell>{user.email}</TableCell>
             </TableRow>
           ))}

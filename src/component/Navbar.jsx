@@ -8,11 +8,11 @@ export default function Navbar() {
       <h1 className="text-xl font-bold">Pepsi</h1>
 
       {/* Center */}
-      <div className="flex gap-4">
+      {/* <div className="flex gap-4">
         <Button variant="ghost">Home</Button>
         <Button variant="ghost">Users</Button>
         <Button variant="ghost">Reports</Button>
-      </div>
+      </div> */}
 
       {/* Right */}
       <div className="flex gap-2">
